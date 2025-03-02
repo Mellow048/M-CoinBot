@@ -4,7 +4,8 @@ from telegram.ext import Application, CommandHandler, ContextTypes
 import sqlite3
 
 # Your bot token from BotFather
-TOKEN = "7353770066:AAG_9oN9JqcUbsU4nwl0VDGmhX48ni2Yl00"  # Replace with your token
+import os
+TOKEN = os.getenv("TOKEN")
 
 # Set up the database
 def setup_database():
